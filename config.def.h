@@ -1,14 +1,16 @@
 /* See LICENSE file for copyright and license details. */
 
 /* appearance */
-static const char font[]            = "-*-terminus-medium-r-*-*-16-*-*-*-*-*-*-*";
-static const char normbordercolor[] = "#444444";
-static const char normbgcolor[]     = "#222222";
-static const char normfgcolor[]     = "#bbbbbb";
-static const char selbordercolor[]  = "#005577";
-static const char selbgcolor[]      = "#005577";
-static const char selfgcolor[]      = "#eeeeee";
-static const char urgbordercolor[]  = "#ff0000";
+static const char font[]                 = "-*-terminus-medium-r-*-*-16-*-*-*-*-*-*-*";
+static const char normbordercolor[]      = "#444444";
+static const char normbgcolor[]          = "#222222";
+static const char normfgcolor[]          = "#bbbbbb";
+static const char floatnormbordercolor[] = "#6a6a6a";
+static const char selbordercolor[]       = "#005577";
+static const char selbgcolor[]           = "#005577";
+static const char selfgcolor[]           = "#eeeeee";
+static const char floatselbordercolor[]  = "#227b9d";
+static const char urgbordercolor[]       = "#ff0000";
 static const char* colors[NumColors][ColLast] = {
 	// border          foreground   background
 	{ normbordercolor, normfgcolor, normbgcolor },  // normal
