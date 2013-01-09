@@ -14,9 +14,13 @@ X11LIB = /usr/X11R6/lib
 XINERAMALIBS  = -lXinerama
 XINERAMAFLAGS = -DXINERAMA
 
+# Xft
+XFTLIBS = $(shell pkg-config xft --libs)
+XFTFLAGS = $(shell pkg-config xft --cflags)
+
 # includes and libs
-INCS = -I${X11INC}
-LIBS = -L${X11LIB} -lX11 ${XINERAMALIBS}
+INCS = -I${X11INC} $(XFTFLAGS)
+LIBS = -L${X11LIB} -lX11 ${XINERAMALIBS} $(XFTLIBS)
 
 # flags
 CPPFLAGS = -D_BSD_SOURCE -D_POSIX_C_SOURCE=2 -DVERSION=\"${VERSION}\" ${XINERAMAFLAGS}
